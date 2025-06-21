@@ -23,6 +23,9 @@ export default function Layout() {
               <Link to="/categories">
                 <Button variant="ghost">Danh mục</Button>
               </Link>
+              <Link to="/sign-in">
+                <Button variant="ghost">Sign In</Button>
+              </Link>
             </div>
           </div>
         </div>
