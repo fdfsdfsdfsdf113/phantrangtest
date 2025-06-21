@@ -19,8 +19,8 @@ export interface Product {
   category: Category;
   isFeatured: boolean;
   views: number;
-  images: string[];
-  discounts: any[];
+  images: string;
+  discounts: number[];
   createdAt: string;
   updatedAt: string;
 }

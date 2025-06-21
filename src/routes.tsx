@@ -1,6 +1,9 @@
-import CategoryPage from './pages/categories';
+import CategoriesPage from './pages/categories';
+import EditCategoryPage from './pages/categories/edit/[categoryId]/page';
 import HomePage from './pages/home/page';
 import Layout from './pages/layout';
+import CreateProductPage from './pages/products/create/page';
+import EditProductPage from './pages/products/edit/[productId]/page';
 import ProductsPage from './pages/products/page';
 import { createBrowserRouter } from 'react-router-dom';
 
@@ -19,8 +22,21 @@ export const router = createBrowserRouter([
       },
       {
         path: 'categories',
-        element: <CategoryPage />,
+        element: <CategoriesPage />,
+      },
+      {
+				path: 'products/create',
+				element: <CreateProductPage />,
+			},
+      {
+        path: 'categories/edit/:categoryId',
+        element: <EditCategoryPage />,
+      },
+      {
+        path: 'products/edit/:productId',
+        element: <EditProductPage />,
       }
+
     ],
   },
 ]);
