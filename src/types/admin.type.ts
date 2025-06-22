@@ -1,6 +1,15 @@
-export interface AdminLogin {
-  username: string;
+export interface LoginPayload {
+  email: string;
   password: string;
-  role: string;
-  token: string;
+}
+
+export interface RegisterPayload {
+  username: string;
+  email: string;
+  password: string;
+  role:string
+}
+
+export interface LoginResponse {
+  accessToken: string;
 }
